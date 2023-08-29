@@ -78,83 +78,26 @@ public:
 	}
 	void print()
 	{
-		//modulo que muestra el value obtenido y el target
-		//para representar graficamente, imprime asteriscos de tal manera
-		//que asemejemos un dado. por ejemplo
-		//Si value = 2, se deberia imprimir
-		//  -------
-		//  |  *  |
-		//  |     |
-		//  |  *  |
-		//  -------
 		
-
-
-		/*if (value==1) {
-			cout << "---------"<<endl;
-			cout << "|       |" << endl;
-			cout << "|   *   |" << endl;
-			cout << "|       |" << endl;
-			cout << "---------" << endl;
-
-		}
-		else if (value == 2) {
-			cout << "---------" << endl;
-			cout << "|   *   |" << endl;
-			cout << "|       |" << endl;
-			cout << "|   *   |" << endl;
-			cout << "---------" << endl;
-
-		}
-		else if (value==3) {
-			cout << "---------" << endl;
-			cout << "|   *   |" << endl;
-			cout << "|   *   |" << endl;
-			cout << "|   *   |" << endl;
-			cout << "---------" << endl;
-
-		}
-		else if (value==4) {
-			cout << "---------" << endl;
-			cout << "| *   * |" << endl;
-			cout << "|       |" << endl;
-			cout << "| *   * |" << endl;
-			cout << "---------" << endl;
-		}
-		else if (value==5) {
-			cout << "---------" << endl;
-			cout << "| *   * |" << endl;
-			cout << "|   *   |" << endl;
-			cout << "| *   * |" << endl;
-			cout << "---------" << endl;
-		}
-		else if (value==6) {
-			cout << "---------" << endl;
-			cout << "| *   * |" << endl;
-			cout << "| *   * |" << endl;
-			cout << "| *   * |" << endl;
-			cout << "---------" << endl;
-		}*/
-
-
-
 		switch (value)
 		{
 		case 1:
-			cout << "\n---------" << endl;
+			
+			cout << "---------" << endl;
 			cout << "|       |" << endl;
 			cout << "|   *   |" << endl;
 			cout << "|       |" << endl;
 			cout << "---------" << endl;
+			
 			break;
 		case 2:
-
+			
 			cout << "---------" << endl;
 			cout << "|   *   |" << endl;
 			cout << "|       |" << endl;
 			cout << "|   *   |" << endl;
 			cout << "---------" << endl;
-
+			
 			break;
 		case 3:
 			cout << "---------" << endl;
@@ -218,13 +161,13 @@ int main(int argc, char* argv[]) {
 			//* preguntas si hay match
 			// 
 			if (d1.isMatch()) {
-				SetConsoleTextAttribute(hConsole, 2);
+				//SetConsoleTextAttribute(hConsole, 2);
 				cout << "ganaste" << endl;
 				
 			}
 			else {
-				SetConsoleTextAttribute(hConsole, 4);
-				cout << "perdiste perra vuelve a intentar" << endl;
+				//SetConsoleTextAttribute(hConsole, 4);
+				cout << "perdiste vuelve a intentar" << endl;
 			}
 			// 
 			//imprime si acerto de acuerdo a la pregunta
