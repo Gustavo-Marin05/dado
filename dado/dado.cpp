@@ -82,7 +82,7 @@ public:
 		switch (value)
 		{
 		case 1:
-			
+			SetConsoleTextAttribute(hConsole, 1);
 			cout << "---------" << endl;
 			cout << "|       |" << endl;
 			cout << "|   *   |" << endl;
@@ -91,7 +91,7 @@ public:
 			
 			break;
 		case 2:
-			
+			SetConsoleTextAttribute(hConsole, 2);
 			cout << "---------" << endl;
 			cout << "|   *   |" << endl;
 			cout << "|       |" << endl;
@@ -100,6 +100,8 @@ public:
 			
 			break;
 		case 3:
+
+			SetConsoleTextAttribute(hConsole, 3);
 			cout << "---------" << endl;
 			cout << "|   *   |" << endl;
 			cout << "|   *   |" << endl;
@@ -110,7 +112,7 @@ public:
 
 
 		case 4:
-
+			SetConsoleTextAttribute(hConsole, 4);
 			cout << "---------" << endl;
 			cout << "| *   * |" << endl;
 			cout << "|       |" << endl;
@@ -119,7 +121,7 @@ public:
 
 			break;
 		case 5:
-
+			SetConsoleTextAttribute(hConsole, 5);
 			cout << "---------" << endl;
 			cout << "| *   * |" << endl;
 			cout << "|   *   |" << endl;
@@ -129,6 +131,7 @@ public:
 			break;
 
 		case 6:
+			SetConsoleTextAttribute(hConsole, 6);
 			cout << "---------" << endl;
 			cout << "| *   * |" << endl;
 			cout << "| *   * |" << endl;
@@ -167,7 +170,7 @@ int main(int argc, char* argv[]) {
 			}
 			else {
 				//SetConsoleTextAttribute(hConsole, 4);
-				cout << "perdiste vuelve a intentar" << endl;
+				
 			}
 			// 
 			//imprime si acerto de acuerdo a la pregunta
