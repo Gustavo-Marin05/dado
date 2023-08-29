@@ -169,7 +169,7 @@ int main(int argc, char* argv[]) {
 				
 			}
 			else {
-				//SetConsoleTextAttribute(hConsole, 4);
+				cout << "perdiste ,intenta de nuevo" << endl;
 				
 			}
 			// 
